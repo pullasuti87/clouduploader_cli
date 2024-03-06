@@ -6,7 +6,7 @@ Allows to upload a file to Azure Blob Storage.
 
 needed:
 
-- Go installed
+- python installed
 - Azure Storage Account
 - Azure Storage Container
 
@@ -14,17 +14,15 @@ how to use:
 
 - git clone https://github.com/yourusername/azure-blob-storage-uploader.git
 - cd azure-blob-storage-uploader
-- Create environment file (.env) and add your Azure Storage account details:
+- create environment file (.env) and add your Azure Storage account details:
 
-  > - AZURE_STORAGE_ACCOUNT=storage_account_name
-  > - AZURE_STORAGE_KEY=storage_account_key
+  > - AZURE_ACCOUNT_NAME=storage_account_name
+  > - AZURE_ACCOUNT_KEY=storage_account_key
+  > - CONTAINER_NAME=storage_container_name
 
-- go build -o upload
+- pip install -r requirements.txt
 
-./upload azblob://<container_name> example.png
-
-- replace <container_name> with Azure Blob Storage container
-- example.png with the file you want to upload.
+python upload.py file1.txt file2.png ...
 
 ### TODO:
 
