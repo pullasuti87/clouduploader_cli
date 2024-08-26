@@ -4,9 +4,9 @@
 
 Allows to upload a file to Azure Blob Storage.
 
-needed:
+needs:
 
-- python installed
+- python and pip installed
 - Azure Storage Account
 - Azure Storage Container
 
@@ -22,7 +22,9 @@ how to use:
 
 - pip install -r requirements.txt
 
-python upload.py file1.txt file2.png ...
+how to run: 
+
+- python upload.py file1.txt file2.png ...
 
 ### TODO:
 
